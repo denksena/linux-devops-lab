@@ -15,6 +15,9 @@ My personal DevOps learning repository.
 ## Current progress
 
 ✅ Ubuntu VM setup
+
 ✅ Git initialized
-✅ First commit 
+
+✅ First commit
+ 
 ✅ GitHub remote connected
