@@ -1,23 +1,49 @@
 # Linux DevOps Lab
 
-My personal DevOps learning repository.
+## Description
 
-## Topics
+This repository is my personal DevOps learning journey.
+
+It includes both general learning progress and hands-on infrastructure projects using Docker and backend services.
+
+---
+
+## Learning Topics
 
 - Linux basics
 - Git & GitHub
 - Docker
-- Bash scripts
-- CI/CD
-- Kubernetes
+- Bash scripting
+- CI/CD concepts
+- Kubernetes (planned)
 
+---
 
-## Current progress
+## Current Project: Dockerized Backend Stack
 
-✅ Ubuntu VM setup
+A small multi-service system built with Docker Compose.
 
-✅ Git initialized
+### Architecture
 
-✅ First commit
- 
-✅ GitHub remote connected
+- Flask application (backend API)
+- PostgreSQL database
+- Docker Compose for orchestration
+
+### Technologies
+
+- Linux (Ubuntu)
+- Docker
+- Docker Compose
+- Python (Flask)
+- PostgreSQL
+
+### Features
+
+- Flask runs inside a container  
+- PostgreSQL runs in a separate container  
+- Services are connected via Docker network  
+- Port mapping configured correctly  
+- Environment starts with one command:
+
+```bash
+docker compose up -d
