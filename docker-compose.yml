@@ -3,6 +3,7 @@ services:
   app:
     build: ./app
     container_name: flask-app
+    restart: unless-stopped
 
     ports:
       - "5000:5000"
@@ -15,6 +16,7 @@ services:
 
   postgres:
     image: postgres:16
+    restart: unless-stopped
 
     container_name: postgres-db
 
@@ -25,3 +27,10 @@ services:
 
     ports:
       - "5433:5432"
+
+    healthcheck:
+     test: ["CMD-SHELL", "pg_isready -U devuser -d devdb"]
+     interval: 5s
+     timeout: 5s
+     retries: 5
+     start_period: 10s
