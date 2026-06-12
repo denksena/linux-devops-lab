@@ -36,6 +36,7 @@ A small multi-service system built with Docker Compose.
 - Docker Compose
 - Python (Flask)
 - PostgreSQL
+- Nginx (reverse proxy)
 
 ### Features
 
